@@ -1,12 +1,16 @@
 ---
-title: "R Notebook"
-output: html_document
+Google depot tools
 ---
 
-The [R plugin](https://www.jetbrains.com/help/pycharm/r-plugin-support.html) for IntelliJ-based IDEs provides
-handy capabilities to work with the [R Markdown](https://www.jetbrains.com/help/pycharm/r-markdown.html) files.
-To [add](https://www.jetbrains.com/help/pycharm/r-markdown.html#add-code-chunk) a new R chunk,
-```{r}
+Source extracted from [depot_tool.git](https://chromium.googlesource.com/chromium/tools/depot_tools.git) to compile plv8
+extension and to meet plv8 makefile prerequisites: [plv8 makefile](https://github.com/plv8/plv8/blob/r3.1alpha/Makefile).
+In make file google address shhould be modify by decompression path depot_tools.zip : 
+
+```bash
+# Get and build the plugin
+	cd $(BUILDDIR) \
+	&& export PATH=$$PATH:`pwd`/clang+llvm-7.0.1-aarch64-linux-gnu/bin \
+	&& wget -nc https://chromium.googlesource.com/chromium/src/+archive/lkgr/tools/clang/plugins.tar.gz \
 
 ```
 position the caret at any line or the code chunk, then click "+".
