@@ -13,17 +13,25 @@ In make file google address shhould be modify by decompression path depot_tools.
 	&& wget -nc https://chromium.googlesource.com/chromium/src/+archive/lkgr/tools/clang/plugins.tar.gz \
 
 ```
-position the caret at any line or the code chunk, then click "+".
 
-The code chunk appears:
-```{r}
-```
+[comment]: <> (position the caret at any line or the code chunk, then click "+".)
 
-Type any R code in the chunk, for example:
-```{r}
-mycars <- within(mtcars, { cyl <- ordered(cyl) })
-mycars
-```
+[comment]: <> (The code chunk appears:)
 
-Now, click the **Run** button on the chunk toolbar to [execute](https://www.jetbrains.com/help/pycharm/r-markdown.html#run-r-code) the chunk code. The result should be placed under the chunk.
-Click the **Knit and Open Document** to build and preview an output.
+[comment]: <> (```{r})
+
+[comment]: <> (```)
+
+[comment]: <> (Type any R code in the chunk, for example:)
+
+[comment]: <> (```{r})
+
+[comment]: <> (mycars <- within&#40;mtcars, { cyl <- ordered&#40;cyl&#41; }&#41;)
+
+[comment]: <> (mycars)
+
+[comment]: <> (```)
+
+[comment]: <> (Now, click the **Run** button on the chunk toolbar to [execute]&#40;https://www.jetbrains.com/help/pycharm/r-markdown.html#run-r-code&#41; the chunk code. The result should be placed under the chunk.)
+
+[comment]: <> (Click the **Knit and Open Document** to build and preview an output.)
